@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: antiquewhite;
+  width: 720px;
+  height: 720px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+  height: 480px;
+}
+
+.pixel {
+  background-color: cadetblue;
+  outline: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.pixel:hover {
+  background-color: antiquewhite;
+}
