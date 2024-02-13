@@ -5,7 +5,8 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
 }
@@ -28,10 +29,15 @@ body {
   height: 480px;
 }
 
+.controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .pixel {
   background-color: cadetblue;
   outline: 1px solid black;
-  /* border: 1px solid black; */
 }
 
 .pixel:hover {
