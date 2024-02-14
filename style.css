@@ -11,8 +11,16 @@ body {
   height: 100vh;
 }
 
+.title {
+  color: #ffd166;
+  text-shadow: #b5871b 2px 2px;
+  font-size: 70px;
+}
+
 .container {
   background-color: #ef476f;
+  border: none;
+  border-radius: 30px;
   width: 720px;
   height: 720px;
 
@@ -33,7 +41,7 @@ button {
   border: none;
   width: 120px;
   height: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
   font-size: 20px;
 }
 
@@ -45,9 +53,10 @@ button {
 
 .pixel {
   background-color: #ffe8d6;
-  outline: 1px solid #ddb892;
+  outline: 1px solid #bc6c25;
 }
 
 .pixel:hover {
-  background-color: #ffd166;
+  background-color: #ef476f;
+  scale: 1.3;
 }
