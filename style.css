@@ -12,10 +12,10 @@ body {
 }
 
 .container {
-  background-color: antiquewhite;
+  background-color: #ef476f;
   width: 720px;
   height: 720px;
-  border: 1px solid red;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -41,14 +41,13 @@ button {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  border: 1px solid red;
 }
 
 .pixel {
-  background-color: cadetblue;
-  outline: 1px solid black;
+  background-color: #ffe8d6;
+  outline: 1px solid #ddb892;
 }
 
 .pixel:hover {
-  background-color: antiquewhite;
+  background-color: #ffd166;
 }

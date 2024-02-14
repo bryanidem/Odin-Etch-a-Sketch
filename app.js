@@ -7,6 +7,15 @@ document.body.onmouseup = () => {
   mouseDown = false;
 };
 
+const colors = ["#9b5de5", "#f15bb5", "#fee440", "#00bbf9", "#00f5d4"];
+
+const changeColor = (e) => {
+  if (mouseDown) {
+    e.target.style.background =
+      colors[Math.floor(Math.random() * colors.length)];
+  }
+};
+
 const fillGridWithDivs = (display, gridResolution) => {
   const totalPixels = gridResolution * gridResolution;
 
@@ -17,12 +26,6 @@ const fillGridWithDivs = (display, gridResolution) => {
     pixel.classList.add("pixel");
     pixel.addEventListener("mouseover", changeColor);
     display.appendChild(pixel);
-  }
-};
-
-const changeColor = (e) => {
-  if (mouseDown) {
-    e.target.style.background = "red";
   }
 };
 
