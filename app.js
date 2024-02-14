@@ -8,6 +8,8 @@ const btnColorMode = document.querySelector(".btn-color");
 const modalColorMode = document.querySelector(".modal-color");
 const formColorMode = document.querySelector(".modal-color > form");
 
+const btnErase = document.querySelector(".btn-erase");
+
 let gridResolution = 32;
 let colorSchema = "gray";
 const colors = {
@@ -53,7 +55,8 @@ formChangeRes.addEventListener("submit", (e) => {
   const formObject = Object.fromEntries(formData);
   const newResolution = formObject["resolution"];
   display.replaceChildren();
-  fillGridWithDivs(display, parseInt(newResolution));
+  gridResolution = parseInt(newResolution);
+  fillGridWithDivs(display, gridResolution);
   modalGridResolution.close();
 });
 
@@ -70,6 +73,11 @@ const openModal = (buttonActivateModal, modal) => {
     modal.showModal();
   });
 };
+
+btnErase.addEventListener("click", () => {
+  display.replaceChildren();
+  fillGridWithDivs(display, gridResolution);
+});
 
 fillGridWithDivs(display, gridResolution);
 openModal(btnGridResolution, modalGridResolution);
