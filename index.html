@@ -11,20 +11,32 @@
       <p class="title">Etch-a-sketch</p>
       <div class="display"></div>
       <div class="controls">
-        <button>Grid Size</button>
-        <div class="color-mode">
-          <div><p>Color Mode:</p></div>
-          <div>
-            <button>Classic</button>
-            <button>Colors</button>
-          </div>
-        </div>
+        <button class="btn-grid">Grid Size</button>
+        <button>Color Mode</button>
         <button>Erase</button>
       </div>
     </div>
     <footer>
       <p>Made by <a href="">Bryan Medina</a> | <a href="">Source code</a></p>
     </footer>
+    <dialog class="modal-grid-res">
+      <form action="#">
+        <input
+          class="new-res"
+          type="number"
+          min="10"
+          max="100"
+          name="resolution"
+          value="16"
+        />
+        <div>
+          <button class="submit-change-res" type="submit">
+            change resolution
+          </button>
+          <button>Cancel</button>
+        </div>
+      </form>
+    </dialog>
     <script src="app.js"></script>
   </body>
 </html>
