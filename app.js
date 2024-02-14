@@ -1,7 +1,6 @@
 const display = document.querySelector(".display");
 const btnGridResolution = document.querySelector(".btn-grid");
 const modalGridResolution = document.querySelector(".modal-grid-res");
-// const btnModalChangeRes = document.querySelector(".submit-change-res");
 const formChangeRes = document.querySelector(".modal-grid-res > form");
 
 const btnColorMode = document.querySelector(".btn-color");

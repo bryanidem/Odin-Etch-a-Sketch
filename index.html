@@ -18,18 +18,21 @@
       </div>
     </div>
     <footer>
-      Made by <a href="">Bryan Medina</a> | <a href="">Source code</a>
+      Made by <a href="">bryanidem</a> | <a href="">Source code</a>
     </footer>
     <dialog class="modal-grid-res">
       <form action="#">
-        <input
-          class="new-res"
-          type="number"
-          min="10"
-          max="100"
-          name="resolution"
-          value="32"
-        />
+        <label for="resolution"
+          >Select a resolution:
+          <input
+            class="new-res"
+            type="number"
+            min="10"
+            max="100"
+            name="resolution"
+            value="32"
+          />
+        </label>
         <div>
           <button class="submit-change-res" type="submit">
             change resolution
@@ -41,14 +44,16 @@
 
     <dialog class="modal-color">
       <form action="#" class="test">
-        <label for="colors">Choose a color scheme: </label>
-        <select name="colors" id="colors">
-          <option value="gray">Gray</option>
-          <option value="rainbow">Rainbow</option>
-          <option value="green">Shades of green</option>
-          <option value="pop">Pop</option>
-          <option value="vintage">Vintage</option>
-        </select>
+        <label for="colors"
+          >Choose a color scheme:
+          <select name="colors" id="colors">
+            <option value="gray">Gray</option>
+            <option value="rainbow">Rainbow</option>
+            <option value="green">Shades of green</option>
+            <option value="pop">Pop</option>
+            <option value="vintage">Vintage</option>
+          </select>
+        </label>
         <div>
           <button type="submit">Change schema</button>
           <button>Cancel</button>
